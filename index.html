@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beauty Store</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+    
+<h1 class="logo">Glow Beauty</h1>
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<div class="cart-box">
+🛒 Cart: <span id="cart-count">0</span>
+</div>
+
+<button id="modeToggle">🌙</button>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Glow Naturally</h1>
+<p>Premium skincare products for radiant skin.</p>
+<button>Shop Now</button>
+</div>
+
+</section>
+<div class="header-tools"></div>
+<input type="text" id="searchBar" placeholder="Search products...">
+
+<div class="wishlist-box" id="wishlistButton">
+❤️ <span id="wishlist-count">0</span>
+</div>
+</div>
+
+<section class="products reveal">  
+<section class="products">
+
+<div class="card">
+
+<button class="wishlist-btn">♡</button>
+
+<img src="https://bodyherbals.in/cdn/shop/products/3_6173e5ea-cb40-4a63-8ed0-58abe154b26e.jpg?v=1712658728&width=1214">  
+<h3>Rose Skin Mist</h3>
+<p>₹549</p>
+<button>Add to Cart</button>
+</div>
+    
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkD1AeT96ciSJYwMmIesVaOzwLcY85HWJp8Q&s">
+<h3>Glow Cleanser</h3>
+<p>₹599</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://karmicbeauty.in/cdn/shop/files/DSC_7843_Serum_100ml.jpg?v=1766830237">
+<h3>Hair Serum</h3>
+<p>₹699</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://www.letscurlup.com/cdn/shop/files/IntenseHydratingHairMask_c7545fae-ec50-4b2c-95f9-b230272d7283.webp?v=1724398423&width=1080">
+<h3>Hair Mask</h3>
+<p>₹999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://rukminim2.flixcart.com/image/300/300/xif0q/face-pack/m/7/y/50-rosanna-rose-instant-glow-face-mask-smooth-glowing-best-original-imahgfvjz5zbvgnt.jpeg">
+<h3>Glow Face Mask</h3>
+<p>₹799</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://princesscosmeticsqa.com/cdn/shop/files/fairy-skin-premium-tinted-sunscreen-50ml-krym-alokay-mn-alshms-mlon-brymyom-skyn-mn-fyry-skyn-50-ml-438983.jpg?v=1764761299&width=1946">
+<h3>Tinted Sunscreen</h3>
+<p>₹999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd">
+<h3>Hair Repair Oil</h3>
+<p>₹699</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<button class="wishlist-btn">♡</button>
+<img src="https://pyxis.nymag.com/v1/imgs/885/072/4b978e0f37a2de6edeca0c1c2a511cbbf0-1----.rsquare.w600.jpg">
+<h3>Creame Blush</h3>
+<p>₹1099</p>
+<button>Add to Cart</button>
+</div>
+
+</section>
+</section>
+<section class="sale-banner">
+<h2>Flat 40% Off On Skincare</h2>
+<p>Limited Time Offer</p>
+</section>
+
+
+<section class="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-container">
+
+<div class="review-box">
+<p>"My skin has never looked better! The glow cleanser is amazing."</p>
+<h4>- Aisha</h4>
+</div>
+
+<div class="review-box">
+<p>"Hair serum worked wonders for my dry hair."</p>
+<h4>- Kaavya</h4>
+</div>
+
+<div class="review-box">
+<p>"The rose mist feels so refreshing. Totally worth it!"</p>
+<h4>- Anjali</h4>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="newsletter">
+
+<h2>Join Our Newsletter</h2>
+<input type="email" placeholder="Enter your email">
+<button>Subscribe</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 GlowBeauty</p>
+<p>Follow us on Instagram | Facebook</p>
+
+</footer>
+    <div id="cartPanel">
+
+<h2>Your Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<p id="emptyCart">Your cart is empty</p>
+
+<button id="closeCart">Close</button>
+
+<div id="wishlistPanel">
+
+<h2>Your Wishlist</h2>
+
+<ul id="wishlistItems"></ul>
+
+<p id="emptyWishlist">Your wishlist is empty</p>
+
+<button id="closeWishlist">Close</button>
+
+</div>
+
+</div>
+<div class="cursor-glow"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
